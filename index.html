@@ -1,0 +1,226 @@
+
+
+<html class="light" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Pinyin Atelier | Interactive Chart</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body class="bg-surface text-on-surface flex flex-col min-h-screen">
+    <!-- TopNavBar -->
+        <nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/80 dark:bg-slate-900/80 backdrop-blur-md">
+        <div class="flex justify-between items-center h-16 px-8 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold text-[#2f3334] dark:text-slate-100 tracking-tighter">Pinyin Atelier</div>
+        <div class="hidden md:flex items-center gap-8 font-lexend font-medium tracking-tight">
+        <a class="text-[#0d62a3] dark:text-[#73b2f9] border-b-2 border-[#0d62a3] pb-1 font-bold" href="#">Chart</a>
+        <a class="text-[#5b6061] dark:text-slate-400 hover:text-[#2f3334] transition-colors" href="#">Practice</a>
+        <a class="text-[#5b6061] dark:text-slate-400 hover:text-[#2f3334] transition-colors" href="#">Library</a>
+        </div>
+        <div class="flex items-center gap-4">
+        <div class="relative group">
+        <span class="material-symbols-outlined text-[#5b6061] cursor-pointer p-2 hover:bg-[#eceeee] rounded-lg transition-all">account_circle</span>
+        </div>
+        </div>
+        </div>
+        <div class="bg-[#eceeee] dark:bg-slate-800 h-[1px] w-full absolute bottom-0"></div>
+        </nav>
+        <main class="pt-16 flex-grow">
+    <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-surface py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold text-on-surface tracking-tighter mb-6 leading-tight">
+                                Explore the <span class="text-primary">Sounds</span> of Pinyin
+                            </h1>
+        <p class="text-xl text-on-surface-variant leading-relaxed max-w-lg mb-10">
+                                A beautiful, illustrative guide to mastering Mandarin pronunciation through interactive sound tiles and hand-drawn art.
+                            </p>
+        <div class="flex gap-4">
+        <button class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-semibold shadow-lg hover:scale-95 active:scale-90 transition-all">
+                                    Start Learning
+                                </button>
+        <button class="px-8 py-4 bg-surface-container-lowest text-primary rounded-full font-semibold hover:bg-surface-container-high transition-colors">
+                                    Watch Demo
+                                </button>
+        </div>
+        </div>
+        <div class="relative">
+        <div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-tertiary-container/20 rounded-full blur-2xl"></div>
+        <img alt="Pinyin Learning Illustration" class="relative z-10 w-full max-w-lg mx-auto rounded-xl transform hover:rotate-1 transition-transform duration-500" data-alt="whimsical hand-drawn style illustration of a smiling child sitting on a large alphabet block surrounded by floating pinyin characters and ink brushes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfOBXx7G6B6oGAcdnDQoTyuIhZP0yXXuh4cy5QF02bFJZoWVqT2h-Fb_RUKsBcT0s-77SC9iIYmbR5c6OBfL9W6iwnFrKIPqFNELWrgaQnnEamVcNCkV8zBafjqVZmWaZadCfUjKSKsJ8-oUiGM99ZBEmsgI0xcfcU38oi-0SAhEQ39BCQaydFCcCLG11FeInRURh1KSJoBH1rydOjKX8SYyYwuJUIP1dvoxY1Jc4-IV9hRdq9KzKUw09nk4obpd51Nwn9uDRPrTHZ"/>
+        </div>
+        </div>
+        </section>
+    <!-- Main Chart Content -->
+    <div class="max-w-7xl mx-auto px-8 pb-24">
+    <!-- Category: Simple Finals -->
+    <section class="mb-20">
+    <div class="flex items-center gap-4 mb-8">
+    <h2 class="text-3xl font-bold tracking-tight text-on-surface">Simple Finals</h2>
+    <div class="h-[2px] flex-grow bg-surface-container"></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+    <!-- Character Tiles -->
+    <div class="group bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-primary-container/20 transition-all cursor-pointer relative overflow-hidden">
+    <span class="text-4xl font-bold text-on-surface group-hover:text-primary">a</span>
+    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+    </div>
+    </div>
+    <div class="group bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-primary-container/20 transition-all cursor-pointer">
+    <span class="text-4xl font-bold text-on-surface group-hover:text-primary">o</span>
+    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+    </div>
+    </div>
+    <div class="group bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-primary-container/20 transition-all cursor-pointer">
+    <span class="text-4xl font-bold text-on-surface group-hover:text-primary">e</span>
+    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+    </div>
+    </div>
+    <div class="group bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-primary-container/20 transition-all cursor-pointer">
+    <span class="text-4xl font-bold text-on-surface group-hover:text-primary">i</span>
+    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+    </div>
+    </div>
+    <div class="group bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-primary-container/20 transition-all cursor-pointer">
+    <span class="text-4xl font-bold text-on-surface group-hover:text-primary">u</span>
+    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+    </div>
+    </div>
+    <div class="group bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-primary-container/20 transition-all cursor-pointer">
+    <span class="text-4xl font-bold text-on-surface group-hover:text-primary">ü</span>
+    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Category: Initials -->
+    <section class="mb-20">
+    <div class="flex items-center gap-4 mb-8">
+    <h2 class="text-3xl font-bold tracking-tight text-on-surface">Initials</h2>
+    <div class="h-[2px] flex-grow bg-surface-container"></div>
+    </div>
+    <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4">
+    <!-- Sample Initials Loop -->
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">b</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">p</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">m</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">f</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">d</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">t</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">n</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    <div class="group bg-surface-container p-5 rounded-xl flex flex-col items-center justify-center gap-3 hover:bg-primary-container/30 transition-all cursor-pointer">
+    <span class="text-3xl font-bold text-on-surface group-hover:text-primary">l</span>
+    <span class="material-symbols-outlined text-primary-dim opacity-40 group-hover:opacity-100" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+    </div>
+    </div>
+    </section>
+    <!-- Bento Layout for Compound Finals & Featured Art -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Category: Compound Finals -->
+    <section class="lg:col-span-2">
+    <div class="flex items-center gap-4 mb-8">
+    <h2 class="text-3xl font-bold tracking-tight text-on-surface">Compound Finals</h2>
+    <div class="h-[2px] flex-grow bg-surface-container"></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">ai</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">ei</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">ui</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">ao</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">ou</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">iu</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">ie</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    <div class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20">
+    <span class="text-2xl font-bold text-on-surface">üe</span>
+    <span class="material-symbols-outlined text-primary">volume_up</span>
+    </div>
+    </div>
+    </section>
+    <!-- Sidebar Promotional Card -->
+    <div class="bg-primary text-on-primary p-8 rounded-3xl flex flex-col justify-between overflow-hidden relative">
+    <div class="relative z-10">
+    <span class="inline-block px-3 py-1 bg-primary-container text-on-primary-container text-xs font-bold rounded-full mb-4 uppercase tracking-widest">Mastery Tip</span>
+    <h3 class="text-3xl font-bold mb-4">Tongue Placement</h3>
+    <p class="text-on-primary/80 leading-relaxed mb-6">
+                                Did you know the position of your tongue changes the tone completely? Check our anatomical guide.
+                            </p>
+    <button class="flex items-center gap-2 font-bold group">
+                                Read Guide <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+    </button>
+    </div>
+    <img alt="Phonetic Guide Art" class="absolute -bottom-8 -right-8 w-40 h-40 opacity-40 mix-blend-screen" data-alt="abstract stylized diagram of vocal cords and tongue positions in minimalist blue and white ink art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKvecMsGCeBIjakb9EERzWwU8gMcNSalKYRc_kvVjGVDkmgArfudBPvI7-HsY2Gme-n5FCMHKgvrqAWrCT-6I0IAWvlCSQEDlPlI_FLZ9DVsE2xb_-O92TKmwbIwmaqC-_1xzcHWO4pdsGhpF6ilP1B0M7caUq7ZqOmizRWKq5Fe9O9fJ_GyX5GVFDa1XGt4_XTbnc9ljC3DQukGsZDOAU3YORcKcwZykcVbzftC59iFlT2JJxHy3q7bmYNEc5WAwIeCrdckBDYpuR"/>
+    </div>
+    </div>
+    </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-12 mt-auto bg-[#eceeee] dark:bg-slate-950">
+    <div class="flex flex-col md:flex-row justify-between items-center px-10 max-w-7xl mx-auto gap-6 font-lexend text-sm leading-relaxed">
+    <div class="font-bold text-[#2f3334] dark:text-slate-200">Pinyin Atelier</div>
+    <div class="flex gap-8">
+    <a class="text-[#5b6061] dark:text-slate-400 hover:underline" href="#">About Us</a>
+    <a class="text-[#5b6061] dark:text-slate-400 hover:underline" href="#">Teachers</a>
+    <a class="text-[#5b6061] dark:text-slate-400 hover:underline" href="#">Privacy Policy</a>
+    <a class="text-[#5b6061] dark:text-slate-400 hover:underline" href="#">Terms</a>
+    </div>
+    <div class="text-[#5b6061] dark:text-slate-400 opacity-80 hover:opacity-100 transition-opacity">
+                    © 2024 Pinyin Atelier Educational. All rights reserved.
+                </div>
+    </div>
+    </footer>
+    </body>
+</html>
