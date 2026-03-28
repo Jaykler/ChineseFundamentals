@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body class="bg-surface text-on-surface flex flex-col min-h-screen">
     <!-- TopNavBar -->
     <nav
@@ -36,12 +37,12 @@
         >
           <a
             class="text-[#0d62a3] dark:text-[#73b2f9] border-b-2 border-[#0d62a3] pb-1 font-bold"
-            href="#"
+            href="#home"
             >Chart</a
           >
           <a
             class="text-[#5b6061] dark:text-slate-400 hover:text-[#2f3334] transition-colors"
-            href="#"
+            href="#SimpleFinals"
             >Practice</a
           >
           <a
@@ -72,6 +73,7 @@
           <div class="relative z-10">
             <h1
               class="text-5xl md:text-6xl font-bold text-on-surface tracking-tighter mb-6 leading-tight"
+              id="home"
             >
               Explore the <span class="text-primary">Sounds</span> of Pinyin
             </h1>
@@ -81,17 +83,23 @@
               A beautiful, illustrative guide to mastering Mandarin
               pronunciation through interactive sound tiles and hand-drawn art.
             </p>
+            <p
+              class="text-2xl md:text-3xl font-bold text-on-surface tracking-tighter mb-6 leading-tight"
+            >
+              Let's Listen <span class="text-primary">to Pinyin</span>
+            </p>
             <div class="flex gap-4">
-              <button
+              <a
                 class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-semibold shadow-lg hover:scale-95 active:scale-90 transition-all"
+                href="#SimpleFinals"
               >
-                Start Learning
-              </button>
-              <button
+                Simple finals
+              </a>
+              <a
                 class="px-8 py-4 bg-surface-container-lowest text-primary rounded-full font-semibold hover:bg-surface-container-high transition-colors"
               >
                 Watch Demo
-              </button>
+              </a>
             </div>
           </div>
           <div class="relative">
@@ -112,16 +120,28 @@
       </section>
       <!-- Main Chart Content -->
       <div class="max-w-7xl mx-auto px-8 pb-24">
-        <!-- Category: Simple Finals -->
-        <section class="mb-20">
+        <!-- Category: #Simple Finals -->
+        <section class="mb-20" aria-labelledby="SimpleFinals">
           <div class="flex items-center gap-4 mb-8">
-            <h2 class="text-3xl font-bold tracking-tight text-on-surface">
+            <h2
+              class="text-3xl font-bold tracking-tight text-on-surface"
+              id="SimpleFinals"
+            >
               Simple Finals
             </h2>
             <div class="h-[2px] flex-grow bg-surface-container"></div>
           </div>
+          <div>
+            <audio
+              controls
+              src="/audios/simple_Finals.ogg"
+              type="audio/ogg"
+            ></audio>
+          </div>
+
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             <!-- Character Tiles -->
+
             <div
               class="group bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-primary-container/20 transition-all cursor-pointer relative overflow-hidden"
             >
@@ -229,11 +249,23 @@
         <!-- Category: Initials -->
         <section class="mb-20">
           <div class="flex items-center gap-4 mb-8">
-            <h2 class="text-3xl font-bold tracking-tight text-on-surface">
+            
+            <h2
+              class="text-3xl font-bold tracking-tight text-on-surface"
+              id="Initials"
+            >
               Initials
             </h2>
+            
             <div class="h-[2px] flex-grow bg-surface-container"></div>
           </div>
+          <div>
+              <audio
+                controls
+                src="/audios/Initials.ogg"
+                type="audio/ogg"
+              ></audio>
+            </div>
           <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4">
             <!-- Sample Initials Loop -->
             <div
@@ -352,6 +384,13 @@
               </h2>
               <div class="h-[2px] flex-grow bg-surface-container"></div>
             </div>
+            <div>
+              <audio
+                controls
+                src="/audios/Compound_Finals.ogg"
+                type="audio/ogg"
+              ></audio>
+            </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div
                 class="group bg-surface-container-low p-6 rounded-2xl flex items-center justify-between hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-outline-variant/20"
@@ -419,35 +458,7 @@
               </div>
             </div>
           </section>
-          <!-- Sidebar Promotional Card -->
-          <div
-            class="bg-primary text-on-primary p-8 rounded-3xl flex flex-col justify-between overflow-hidden relative"
-          >
-            <div class="relative z-10">
-              <span
-                class="inline-block px-3 py-1 bg-primary-container text-on-primary-container text-xs font-bold rounded-full mb-4 uppercase tracking-widest"
-                >Mastery Tip</span
-              >
-              <h3 class="text-3xl font-bold mb-4">Tongue Placement</h3>
-              <p class="text-on-primary/80 leading-relaxed mb-6">
-                Did you know the position of your tongue changes the tone
-                completely? Check our anatomical guide.
-              </p>
-              <button class="flex items-center gap-2 font-bold group">
-                Read Guide
-                <span
-                  class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
-                  >arrow_forward</span
-                >
-              </button>
-            </div>
-            <img
-              alt="Phonetic Guide Art"
-              class="absolute -bottom-8 -right-8 w-40 h-40 opacity-40 mix-blend-screen"
-              data-alt="abstract stylized diagram of vocal cords and tongue positions in minimalist blue and white ink art style"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKvecMsGCeBIjakb9EERzWwU8gMcNSalKYRc_kvVjGVDkmgArfudBPvI7-HsY2Gme-n5FCMHKgvrqAWrCT-6I0IAWvlCSQEDlPlI_FLZ9DVsE2xb_-O92TKmwbIwmaqC-_1xzcHWO4pdsGhpF6ilP1B0M7caUq7ZqOmizRWKq5Fe9O9fJ_GyX5GVFDa1XGt4_XTbnc9ljC3DQukGsZDOAU3YORcKcwZykcVbzftC59iFlT2JJxHy3q7bmYNEc5WAwIeCrdckBDYpuR"
-            />
-          </div>
+          
         </div>
       </div>
     </main>
